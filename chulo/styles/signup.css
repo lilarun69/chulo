@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body .signup-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body .signup-section::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/bg.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  z-index: -1;
+}
+body .signup-section .right-side {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .signup-section .right-side .logo-img-container .logo-img {
+  height: 10rem;
+}
+body .signup-section .right-side .hero-title {
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding-bottom: 0.5rem;
+}
+body .signup-section .right-side .hero-title span {
+  color: #E80000;
+}
+body .signup-section .right-side .hero-second-title {
+  padding: 1rem;
+}
+body .signup-section .right-side p {
+  text-align: center;
+  padding: 1rem;
+}
+body .signup-section .right-side .login-form-container {
+  background-color: white;
+  border: 0.2rem solid red;
+  border-top: 0.2rem solid red;
+  padding: 0.2rem 0.5rem;
+  width: 100%;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .signup-section .right-side .login-form-container .login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+body .signup-section .right-side .login-form-container .login-form .login-title {
+  font-size: 1.7rem;
+  padding: 0.5rem 0;
+  padding-bottom: 1rem;
+  color: #E80000;
+}
+body .signup-section .right-side .login-form-container .login-form .label {
+  width: 60%;
+  padding: 0.4rem;
+}
+body .signup-section .right-side .login-form-container .login-form .input {
+  margin: 0.4rem 0;
+  padding: 0.4rem;
+  width: 60%;
+}
+body .signup-section .right-side .login-form-container .login-form .submit-btn {
+  padding: 0.5rem 1rem;
+  border: 2px solid #E80000;
+  background-color: #E80000;
+  color: #ffffff;
+  transition: 0.3s all;
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 1rem;
+}
+body .signup-section .right-side .login-form-container .login-form .submit-btn:hover {
+  background-color: #ffffff;
+  color: #E80000;
+}
+body .signup-section .right-side .login-form-container .signup-text {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+body .signup-section .right-side .login-form-container .signup-text .signup-btn {
+  color: blue;
+  text-decoration: none;
+}
+body .signup-section .right-side .login-form-container .signup-text .signup-btn:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1024px) {
+  body .signup-section {
+    height: auto;
+    padding: 2rem 0;
+  }
+  body .signup-section .right-side {
+    width: 90%;
+  }
+  body .signup-section .right-side .login-form-container .login-form .label,
+  body .signup-section .right-side .login-form-container .login-form .input {
+    width: 90%;
+  }
+}/*# sourceMappingURL=signup.css.map */
